@@ -1,4 +1,4 @@
-# Deluge Docker Image for Raspberry Pi
+# Deluge Docker Image for Raspberry Pi [![Build Status](https://travis-ci.org/nelsonyaccuzzi/docker-rpi-deluge.svg?branch=master)](https://travis-ci.org/nelsonyaccuzzi/docker-rpi-deluge)
 
 ## Usage
 
