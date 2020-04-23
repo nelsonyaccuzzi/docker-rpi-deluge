@@ -1,4 +1,4 @@
-FROM arm32v7/debian:bullseye-slim
+FROM balenalib/raspberry-pi:bullseye
 
 ARG DELUGE_VERSION=2.0.3-2
 
