@@ -1,9 +1,9 @@
-FROM balenalib/raspberry-pi:bullseye
+FROM arm32v7/debian:bullseye-slim
 
 ARG DELUGE_VERSION=2.0.3-2
 
-RUN apt update && apt install deluge=$DELUGE_VERSION deluged=$DELUGE_VERSION deluge-web=$DELUGE_VERSION deluge-console=$DELUGE_VERSION
+RUN apt update && apt install deluge=$DELUGE_VERSION deluged=$DELUGE_VERSION deluge-web=$DELUGE_VERSION deluge-console=$DELUGE_VERSION -y
 
-COPY startup.sh .
+COPY scripts/startup.sh .
 
 CMD ["./startup.sh"] 
